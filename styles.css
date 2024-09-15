@@ -7,40 +7,13 @@ body {
   margin: 0;
 }
 
-/* for grids: 
----display: grid
----grid-template-rows (number of rows in) => [px,%,auto,fr repeat(int), mix]
----grid-template-columns (number of columns) => [px,,%,auto,fr repeat(int), mix]
----row-gap
----column-gap
----gap => [column-gap, row-gap] mix 
- grid-column : 1/int
- grids( videos 60 and after)
 
-
- transform:
- scale: scaleX-scaleY-scale(int deg/turn) //bigger or smaller
- rotate(deg) 
- translate(int px, int px) moving better than position
- skew: skewX skewY skew(int deg)
- matrix : matrix(scaleX(), skewY(), skeyX(), scaleY(), translateX(), translateY())
-
- transform-origin
-  
- */
-
- /* 
- if i want to have a checked item colored:
- input[type="checkbox"]:checked + label {
-  color: red;
- } */
 
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* display: grid;
-  height: 100vp; */
+
 
   align-items: center;
   text-align: center;
@@ -49,7 +22,6 @@ main {
 
 * {
   box-sizing: border-box;
-  /* object-fit: cover; for images sizes */
 }
 
 p,
@@ -100,10 +72,7 @@ h1 {
   top: 10px;
   border-radius:50% ;
   background-color: red;
- /*  color: white;
-  border-radius: 50%;
-  padding: 2px 5px;
-  font-size: 0.8rem; */
+ 
 }
 
 .navbar-list {
@@ -134,12 +103,8 @@ ul {
   color: rgb(40, 40, 40);
   padding: 10px;
   margin: 10px;
-  /* display: flex;
-  width: fit-content; */
+  
 }
-/*   visibility: hidden; when using phone or tablet screen
-
- */
 
 #menu-link:hover {
   color: rgb(17, 100, 30);
@@ -157,7 +122,6 @@ header h1,
 }
 header p {
   padding: 20px;
-  /* width: 80%; */
   display: flex;
 }
 
@@ -169,8 +133,7 @@ header p {
 }
 
 #header-img:hover {
-  /* position: relative;
-  bottom: 5px; */
+
   transform: scale(1.05);
   box-shadow: 0 5px 10px 0 #8e54546c;
 }
@@ -207,19 +170,7 @@ header {
 }
 
 #shop-btn {
-  /* 
-    display: none; for hiding elements and then showing them using js
-    border-width: 2px;
-    border-color: aquamarine;
-    border-style: solid; 
-    border: 1px red solid; this is the same as above but takes all these values
-    background-color: black;
-    visibility: hidden;
-    overflow : takes scroll, auto, hidden, and visible where auto is the best option really 
-    overflow-y: hidden;
-    overflow-x: hidden
-    vertical-align: middle ;
-        */
+ 
   background-color: white;
   display: inline-block;
   color: rgb(40, 40, 40);
@@ -253,12 +204,7 @@ header {
   padding: 10px;
 }
 
-/*
-this is for viewport
- #client-test-span{
-  visibility: hidden;
-  position: absolute;
-} */
+
 
 #img-price {
   width: 90%;
@@ -269,7 +215,6 @@ this is for viewport
 .container {
   display: flex;
   justify-content: center;
-  /* justify-content: flex-start... maybe better? not */
   flex-wrap: wrap;
   padding: 20px;
 }
