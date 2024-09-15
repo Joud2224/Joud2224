@@ -55,7 +55,7 @@ h1 {
   background-repeat: no-repeat;
   text-align: center;
   white-space: wrap;
-  position: fixed;
+  position: sticky;
   top: 0;
   box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.295);
 }
