@@ -1,0 +1,439 @@
+body {
+  background-color: rgb(241, 240, 240);
+  color: rgb(207, 119, 119);
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0;
+}
+
+/* for grids: 
+---display: grid
+---grid-template-rows (number of rows in) => [px,%,auto,fr repeat(int), mix]
+---grid-template-columns (number of columns) => [px,,%,auto,fr repeat(int), mix]
+---row-gap
+---column-gap
+---gap => [column-gap, row-gap] mix 
+ grid-column : 1/int
+ grids( videos 60 and after)
+
+
+ transform:
+ scale: scaleX-scaleY-scale(int deg/turn) //bigger or smaller
+ rotate(deg) 
+ translate(int px, int px) moving better than position
+ skew: skewX skewY skew(int deg)
+ matrix : matrix(scaleX(), skewY(), skeyX(), scaleY(), translateX(), translateY())
+
+ transform-origin
+  
+ */
+
+ /* 
+ if i want to have a checked item colored:
+ input[type="checkbox"]:checked + label {
+  color: red;
+ } */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* display: grid;
+  height: 100vp; */
+
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  /* object-fit: cover; for images sizes */
+}
+
+p,
+h2 {
+  color: rgb(40, 40, 40);
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#logo-link {
+  color: rgb(40, 40, 40);
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-right: auto;
+  padding: 10px;
+  position: relative;
+  font-style: italic;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-image: url(/imgs/R.jpg);
+  height: 60px;
+  width: 100%;
+  align-content: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  white-space: wrap;
+  position: fixed;
+  top: 0;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.295);
+}
+
+#cart-nav::after {
+  content: "1";
+  font-size: 10px;
+  text-align: center;
+  align-content: center;
+  color: #ffffff;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 10px;
+  border-radius:50% ;
+  background-color: red;
+ /*  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 0.8rem; */
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 5px;
+}
+
+
+.navbar-list li:nth-child(4) {
+    margin-left: auto;
+    
+    
+} 
+   
+
+ul {
+  list-style: none;
+  /* color: rgb(40, 40, 40); */
+  text-align: start;
+  /* color: rgb(207, 119, 119); */
+}
+
+#menu-link {
+  /* justify-content: space-between; */
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+  padding: 10px;
+  margin: 10px;
+  /* display: flex;
+  width: fit-content; */
+}
+/*   visibility: hidden; when using phone or tablet screen
+
+ */
+
+#menu-link:hover {
+  color: rgb(17, 100, 30);
+  /* text-decoration: underline; */
+  text-shadow: 2px 2px 50px #ffffff;
+}
+
+
+
+header h1,
+.header-btn {
+  padding: 20px;
+  width: fit-content;
+  display: flex;
+}
+header p {
+  padding: 20px;
+  /* width: 80%; */
+  display: flex;
+}
+
+#header-img {
+  width: 90%;
+  margin: 5%;
+  transition-duration: 1s;
+  border-radius: 30px;
+}
+
+#header-img:hover {
+  /* position: relative;
+  bottom: 5px; */
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px 0 #8e54546c;
+}
+
+#first-column {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 30%;
+}
+
+#second-column {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: fit-content;
+}
+
+header {
+  text-align: start;
+  align-items: center;
+  display: flex; /*this is to display the first section in two columns*/
+  /* flex-direction: column; */ /*phone view*/
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  /* float: left; */
+  width: 94%;
+  margin: 3% 3% 0 3% ;
+  /* background-image: url(/imgs/pngtree-large-indoor-plants-in-white-containers-picture-image_2756293.jpg); */
+  /* width: 98%;
+  margin-left: 1%; */
+  justify-content: center;
+}
+
+#shop-btn {
+  /* 
+    display: none; for hiding elements and then showing them using js
+    border-width: 2px;
+    border-color: aquamarine;
+    border-style: solid; 
+    border: 1px red solid; this is the same as above but takes all these values
+    background-color: black;
+    visibility: hidden;
+    overflow : takes scroll, auto, hidden, and visible where auto is the best option really 
+    overflow-y: hidden;
+    overflow-x: hidden
+    vertical-align: middle ;
+        */
+  background-color: white;
+  display: inline-block;
+  color: rgb(40, 40, 40);
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 5px;
+}
+
+#shop-btn:hover {
+  border: 1px solid #479b2b;
+  color: #479b2b;
+  cursor: pointer;
+}
+
+#hero-section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  padding: 10px;
+}
+
+/*
+this is for viewport
+ #client-test-span{
+  visibility: hidden;
+  position: absolute;
+} */
+
+#img-price {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* justify-content: flex-start... maybe better? not */
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* products */
+.product {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 8px;
+  border-radius: 8px;
+  width: 200px;
+  /* height: 300px; */
+  justify-content: center;
+  text-align: center;
+ 
+}
+/* products */
+
+.product:hover {
+  box-shadow: 0px 0px 30px 2px #a1a1a158;
+}
+
+/* caret-color: red colors the cursor when typing */
+
+form {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 1%;
+  width: 98%;
+  align-items: center;
+  height: auto;
+  border: 2px solid #818181;
+  border-radius: 5px;
+}
+
+input {
+  width: auto;
+}
+
+#submit-btn {
+  width: 20%;
+  justify-self: center;
+  align-content: center;
+}
+
+/* about us */
+
+.about-us-main section {
+  width: 100%;
+}
+
+.about-us-header p {
+  border-radius: 50px 2px 50px 2px;
+  margin: 10px;
+  padding: 20px;
+  background-color: rgb(207, 119, 119);
+  color: #ffffff;
+  box-shadow: 0px 0px 20px 5px#a85d5d   inset;
+}
+
+
+.about-us-header p:hover{
+
+  box-shadow: 0px 5px 30px 5px#4b3a3a  ;
+  transform: translateY(-2px);
+}
+
+.about-us-header {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  justify-content: flex-start;
+  align-items:center;
+}
+
+.about-us-header div img {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+#stupid-img {
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 50px 15px 50px 15px;
+}
+
+
+
+.team-container {
+  margin: 2% ;
+  width: 96%;
+  justify-content: space-around;
+  perspective: 600px; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+
+}
+ 
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 1s ;
+  transform-origin: right center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.box:hover {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.box .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  backface-visibility: hidden;
+}
+
+.box .front {
+  height: 100%;
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  padding: 20px;
+  border-radius:10px;
+  text-align: start;
+}
+
+.box .back {
+  transform: rotateY(180deg);
+  border-radius:10px;
+}
+
+.face img{
+  height: 200px;
+  width: 200px;
+   border-radius: 10px;
+}
+/* contact us */
+
+footer {
+  position: absolute;
+  /* bottom: 0; */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  width: 100%;
+}
