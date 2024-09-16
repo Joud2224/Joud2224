@@ -5,6 +5,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   margin: 0;
+  height: 100vh;
 }
 
 
@@ -13,7 +14,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  /* display: grid;
+  height: 100vp; */
 
   align-items: center;
   text-align: center;
@@ -34,6 +36,7 @@ h1 {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
+h3{font-family: 'Courier New', Courier, monospace;}
 
 #logo-link {
   color: rgb(40, 40, 40);
@@ -70,9 +73,9 @@ h1 {
   width: 13px;
   height: 13px;
   top: 10px;
-  border-radius:50% ;
+  border-radius: 50%;
   background-color: red;
- 
+
 }
 
 .navbar-list {
@@ -82,37 +85,30 @@ h1 {
   padding: 5px;
 }
 
-
 .navbar-list li:nth-child(4) {
-    margin-left: auto;
-    
-    
-} 
-   
+  margin-left: auto;
+}
 
 ul {
   list-style: none;
-  /* color: rgb(40, 40, 40); */
+  width: fit-content;
   text-align: start;
-  /* color: rgb(207, 119, 119); */
+
 }
 
 #menu-link {
-  /* justify-content: space-between; */
   text-decoration: none;
   color: rgb(40, 40, 40);
   padding: 10px;
   margin: 10px;
-  
+ 
 }
+
 
 #menu-link:hover {
   color: rgb(17, 100, 30);
-  /* text-decoration: underline; */
   text-shadow: 2px 2px 50px #ffffff;
 }
-
-
 
 header h1,
 .header-btn {
@@ -122,6 +118,7 @@ header h1,
 }
 header p {
   padding: 20px;
+  /* width: 80%; */
   display: flex;
 }
 
@@ -133,17 +130,19 @@ header p {
 }
 
 #header-img:hover {
-
+ 
   transform: scale(1.05);
   box-shadow: 0 5px 10px 0 #8e54546c;
 }
 
 #first-column {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
+
+  display: flex;
+  flex-direction: column;
   width: 50%;
   height: 30%;
+  text-align: center;
+  align-items: center;
 }
 
 #second-column {
@@ -151,6 +150,32 @@ header p {
   align-items: center;
   width: 50%;
   height: fit-content;
+}
+
+@media (max-width: 760px) {
+  header {
+    width: 100%;
+    flex-direction: column;
+  }
+  #first-column,
+  #second-column {
+    width: 100%;
+  }
+  #hero-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .section div ul {
+    justify-content: center;
+    justify-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    width: fit-content;
+  }
 }
 
 header {
@@ -162,7 +187,7 @@ header {
   border-radius: 10px;
   /* float: left; */
   width: 94%;
-  margin: 3% 3% 0 3% ;
+  margin: 3% 3% 0 3%;
   /* background-image: url(/imgs/pngtree-large-indoor-plants-in-white-containers-picture-image_2756293.jpg); */
   /* width: 98%;
   margin-left: 1%; */
@@ -170,7 +195,6 @@ header {
 }
 
 #shop-btn {
- 
   background-color: white;
   display: inline-block;
   color: rgb(40, 40, 40);
@@ -195,7 +219,7 @@ header {
   margin-left: 3%;
   margin-right: 3%;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
 }
@@ -229,7 +253,6 @@ header {
   /* height: 300px; */
   justify-content: center;
   text-align: center;
- 
 }
 /* products */
 
@@ -238,28 +261,68 @@ header {
 }
 
 /* caret-color: red colors the cursor when typing */
-
-form {
-  justify-content: space-between;
+.contianer-form {
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-  margin: 1%;
-  width: 98%;
-  align-items: center;
-  height: auto;
-  border: 2px solid #818181;
-  border-radius: 5px;
+  width: 96%;
+  margin-left: 2%;
+  height: 100vh;
 }
 
+.form-item {
+  width: 100%;
+  height: 550px;
+  max-width: 820px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+.contact {
+  background-color: rgb(207, 119, 119);
+  color: #fff;
+  font-size: x-large;
+}
+submit-form {
+  color: rgb(207, 119, 119);
+  
+}
+
+
+
+form {
+  display: flex;
+  color: #5e5e5e;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  
+}
 input {
-  width: auto;
+  width: 50%;
+  margin: 20px;
+  justify-content: space-evenly;
 }
 
 #submit-btn {
   width: 20%;
   justify-self: center;
   align-content: center;
+  border: 1px solid rgb(207, 119, 119);
+  border-radius: 10px;
+  background-color: #fff;
+  width: 50%;
+  padding: 5px;
+
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgb(170, 132, 132);
 }
 
 /* about us */
@@ -274,23 +337,22 @@ input {
   padding: 20px;
   background-color: rgb(207, 119, 119);
   color: #ffffff;
-  box-shadow: 0px 0px 20px 5px#a85d5d   inset;
+  box-shadow: 0px 0px 20px 5px#a85d5d inset;
 }
 
-
-.about-us-header p:hover{
-
-  box-shadow: 0px 5px 30px 5px#4b3a3a  ;
+.about-us-header p:hover {
+  box-shadow: 0px 5px 30px 5px#4b3a3a;
   transform: translateY(-2px);
 }
 
 .about-us-header {
   height: fit-content;
   display: flex;
+  /* flex-wrap: wrap; */
   flex-direction: row;
   background-color: transparent;
   justify-content: flex-start;
-  align-items:center;
+  align-items: center;
 }
 
 .about-us-header div img {
@@ -307,31 +369,26 @@ input {
   width: 100%;
   height: fit-content;
   padding: 10px;
-  border-radius: 50px 15px 50px 15px;
+  border-radius: 50px 12px 50px 12px;
 }
 
-
-
 .team-container {
-  margin: 2% ;
+  margin: 2%;
   width: 96%;
   justify-content: space-around;
-  perspective: 600px; 
+  perspective: 600px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-
-
 }
- 
 
 .box {
   position: relative;
   width: 200px;
   height: 200px;
   transform-style: preserve-3d;
-  transition: transform 1s ;
+  transition: transform 1s;
   transform-origin: right center;
   margin-bottom: 10px;
   margin-left: 10px;
@@ -357,19 +414,19 @@ input {
   background-color: #ffffff;
   flex-direction: column;
   padding: 20px;
-  border-radius:10px;
+  border-radius: 10px;
   text-align: start;
 }
 
 .box .back {
   transform: rotateY(180deg);
-  border-radius:10px;
+  border-radius: 10px;
 }
 
-.face img{
+.face img {
   height: 200px;
   width: 200px;
-   border-radius: 10px;
+  border-radius: 10px;
 }
 /* contact us */
 
