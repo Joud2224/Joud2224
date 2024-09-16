@@ -181,16 +181,12 @@ header p {
 header {
   text-align: start;
   align-items: center;
-  display: flex; /*this is to display the first section in two columns*/
-  /* flex-direction: column; */ /*phone view*/
+  display: flex; 
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   /* float: left; */
   width: 94%;
   margin: 3% 3% 0 3%;
-  /* background-image: url(/imgs/pngtree-large-indoor-plants-in-white-containers-picture-image_2756293.jpg); */
-  /* width: 98%;
-  margin-left: 1%; */
   justify-content: center;
 }
 
@@ -219,7 +215,6 @@ header {
   margin-left: 3%;
   margin-right: 3%;
   display: flex;
-  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
 }
@@ -227,8 +222,6 @@ header {
 .section {
   padding: 10px;
 }
-
-
 
 #img-price {
   width: 90%;
@@ -260,7 +253,6 @@ header {
   box-shadow: 0px 0px 30px 2px #a1a1a158;
 }
 
-/* caret-color: red colors the cursor when typing */
 .contianer-form {
   display: flex;
   width: 96%;
@@ -290,8 +282,6 @@ submit-form {
   
 }
 
-
-
 form {
   display: flex;
   color: #5e5e5e;
@@ -300,8 +290,8 @@ form {
   align-items: center;
   justify-items: center;
   align-content: center;
-  
 }
+
 input {
   width: 50%;
   margin: 20px;
