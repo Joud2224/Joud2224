@@ -11,36 +11,40 @@
     />
   </head>
   <body>    
-      <nav class="navbar"> 
-        <p class="navbar-logo" id="logo">
-        <a href="/index.html" id="logo-link">Leaf & Bloom</a>
-      </p>
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a href="/index.html" id="menu-link">
-              Home
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="products.html" id="menu-link">
-              Products
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="/aboutus.html" id="menu-link">
-              About Us
-            </a>
-          </li>
-          <li class="navbar-item">
-            <a href="" id="menu-link">
-              <i class="fas fa-shopping-cart" id="cart-nav"></i>
-             </a>
-          </li>
-          <li class="navbar-item">
-            <a href="/contact.html" id="menu-link">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
+    <nav class="navbar"> 
+      <div class="navbar-logo" id="logo">
+      <a href="/index.html">Leaf & Bloom</a>
+      </div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+  </div>
+      <ul class="navbar-list" id="navbar-list">
+        <li class="navbar-item">
+          <a href="/index.html"  class="menu-link">
+            Home
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="/products.html" class="menu-link">
+            Products
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="/aboutus.html" class="menu-link">
+            About Us
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="cart.html" class="menu-link">
+            <i class="fas fa-shopping-cart" id="cart-nav" data-count= 0></i>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="/contact.html" class="menu-link">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+      
     </div>
     <header>
       <div id="first-column">
@@ -64,8 +68,8 @@
       <h1>
         Decorate your home <span><i>with our plants</i></span>
       </h1>
-      <div id="hero-section">
-        <section class="section">
+      <section id="hero-section">
+        <div class="section">
           <h2>Why Shop with Us?</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
@@ -73,6 +77,7 @@
             velit debitis possimus cum quod asperiores fugit, delectus aperiam
             at sed Lorem ipsum dolor.
           </p>
+          <div>
           <ul>
             <li class="li-hero">
               <h3>Unbeatable Quality</h3>
@@ -93,17 +98,18 @@
               </ul>
             </li>
           </ul>
-        </section>
+        </div>
+        </div>
 
-        <section class="section">
+        <div class="section">
           <img
             id="header-img"
             src="imgs/img1.jpg"
             alt="Indoor plants display"
             width="100%"
           />
-        </section>
-      </div>
+        </div>
+      </section>
       <h1 id="header">Indoor Plants</h1>
       <section class="container">
         <div class="product">
@@ -114,7 +120,7 @@
             alt=""
           />
           <p>Price: $50</p>
-          <button id="shop-btn">
+          <button class="shop-btn">
             <i class="fas fa-shopping-cart"></i> Add to cart
           </button>
           <!-- <li class="navbar-item"> -->
@@ -127,7 +133,7 @@
             alt=""
           />
           <p>Price: $30</p>
-          <button id="shop-btn">
+          <button class="shop-btn">
             <i class="fas fa-shopping-cart"> </i> Add to cart
           </button>
         </div>
@@ -139,7 +145,7 @@
             alt=""
           />
           <p>Price: $20</p>
-          <button id="shop-btn">
+          <button class="shop-btn">
             <i class="fas fa-shopping-cart"></i> Add to cart
           </button>
         </div>
@@ -151,7 +157,7 @@
             alt=""
           />
           <p>Price: $25</p>
-          <button id="shop-btn">
+          <button class="shop-btn">
             <i class="fas fa-shopping-cart"></i> Add to cart
           </button>
         </div>
@@ -163,7 +169,7 @@
             alt=""
           />
           <p>Price: $25</p>
-          <button id="shop-btn">
+          <button class="shop-btn">
             <i class="fas fa-shopping-cart"></i> Add to cart
           </button>
         </div>
@@ -178,7 +184,7 @@
             alt=""
           />
           <p>Price: $25</p>
-          <button id="shop-btn">
+          <button class="shop-btn">
             <i class="fas fa-shopping-cart"></i> Add to cart
           </button>
         </div>
@@ -190,7 +196,7 @@
             alt=""
           />
           <p>Price: $25</p>
-          <button id="shop-btn">
+          <button class="shop-btn">
             <i class="fas fa-shopping-cart"></i> Add to cart
           </button>
         </div>
@@ -202,7 +208,7 @@
             alt=""
           />
           <p>Price: $25</p>
-          <button id="shop-btn">
+          <button class="shop-btn">
             <i class="fas fa-shopping-cart"></i> Add to cart
           </button>
         </div>
@@ -214,7 +220,7 @@
             alt=""
           />
           <p>Price: $25</p>
-          <button id="shop-btn">
+          <button class="shop-btn">
             <i class="fas fa-shopping-cart"></i> Add to cart
           </button>
         </div>
@@ -226,7 +232,7 @@
             alt=""
           />
           <p>Price: $25</p>
-          <button id="shop-btn">
+          <button class="shop-btn">
             <i class="fas fa-shopping-cart"></i> Add to cart
           </button>
         </div>
@@ -298,5 +304,6 @@
     <footer>
       <p>This is &copy; our copyrights footer section</p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
