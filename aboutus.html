@@ -11,29 +11,37 @@
   />
   </head>
   <body>
-    <nav class="navbar">
-      <p class="navbar-logo" id="logo">
-        <a href="/index.html" id="logo-link">Leaf & Bloom</a>
-      </p>
-      <ul class="navbar-list">
+    <nav class="navbar"> 
+      <div class="navbar-logo" id="logo">
+      <a href="/index.html">Leaf & Bloom</a>
+      </div>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+  </div>
+      <ul class="navbar-list" id="navbar-list">
         <li class="navbar-item">
-          <a href="/index.html" id="menu-link">Home</a>
+          <a href="/index.html"  class="menu-link">
+            Home
+          </a>
         </li>
         <li class="navbar-item">
-          <a href="/products.html" id="menu-link">Products</a>
+          <a href="/products.html" class="menu-link">
+            Products
+          </a>
         </li>
         <li class="navbar-item">
-          <a href="/aboutus.html" id="menu-link">About Us</a>
+          <a href="/aboutus.html" class="menu-link">
+            About Us
+          </a>
         </li>
         <li class="navbar-item">
-          <a href="" id="menu-link">
-            <i class="fas fa-shopping-cart" id="cart-nav"></i>
-           </a>
+          <a href="cart.html" class="menu-link">
+            <i class="fas fa-shopping-cart" id="cart-nav" data-count= 0></i>
+          </a>
         </li>
         <li class="navbar-item">
-          <a href="/contact.html" id="menu-link">Contact Us</a>
+          <a href="/contact.html" class="menu-link">Contact Us</a>
         </li>
-        
       </ul>
     </nav>
     <header class="about-us-header">
@@ -132,5 +140,6 @@
     <footer>
       <p>This is &copy; our copyrights footer section</p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
